@@ -1,9 +1,9 @@
 const express = require("express")
 const users = require('./routes/users');
 
-app.use('/api/users', users);
-
 const app = express()
+
+app.use('/api/users', users);
 
 app.get('/api', (request, response) => {
     response.send('Hello world from Express!');
